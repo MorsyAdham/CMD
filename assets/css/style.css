@@ -1511,6 +1511,10 @@ h3:after {
     .blog {
         height: 50vh;
     }
+
+    .contact .flex {
+        margin-top: 5rem;
+    }
 }
 
 
