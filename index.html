@@ -61,7 +61,7 @@
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
                 <a href="#courses">Courses</a>
-                <a href="#blog">Blog</a>                
+                <a href="#blog">Blog</a>
                 <a href="#about-us">About Us</a>
                 <a href="#contact">Contact Us</a>
             </nav>
@@ -522,20 +522,36 @@
 
     <!-- contact us section -->
     <section class="contact" id="contact">
-        <div class="row">
-            <h1>Contact Us</h1>
+        <div class="contact-container">
+            
+            <form action="https://api.web3forms.com/submit" class="contact-left">
+                <input type="hidden" name="access_key" value="09eb457e-784f-4139-b6bf-0f0bc89e23b4">
+
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-left-title">
+                    <h2></h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                <input type="email" name="email" placeholder="example@gmail.com" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <div class="contact-right">
+                <img src="assets/img/Contact us-amico.png" alt="">
+            </div>
         </div>
+
         <div class="flex">
             <div class="contact-text">
-                <div class="phone">
-                    <p>
+                <div class="info">
+                    <p class="contact-info">
                         <span class="material-symbols-outlined">
                             call
                         </span> 0105 - 056 - 8333
                     </p>
-                </div>
-                <div class="email">
-                    <p>
+                    <p class="contact-info">
                         <span class="material-symbols-outlined">
                             mail
                         </span> cmd.codify@gmail.com
