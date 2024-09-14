@@ -1512,6 +1512,10 @@ h3:after {
         height: 50vh;
     }
 
+    .contact-right img {
+        width: 350px;
+    }
+
     .contact .flex {
         margin-top: 50px;
     }
@@ -1528,4 +1532,7 @@ h3:after {
         height: 220vh;
     }
 
+    .contact .flex {
+        margin-top: 50px;
+    }
 }
