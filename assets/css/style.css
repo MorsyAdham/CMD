@@ -4,7 +4,9 @@
 
 :root {
     /* --main-color: #e056fd; */
-    --main-color: #6ff1ff;
+    --main-color: #01298e;
+    --navy-blue: #01298e;
+    
     --black: #090029;
     --bg-color: #e2e2e2;
     --white: #fff;
@@ -163,15 +165,15 @@ section {
 }
 
 .sticky .flex .logo i {
-    color: #444af2;
+    color: var(--main-color);
 }
 
 .sticky .flex .navbar a:hover {
-    color: #444af2;
+    color: var(--main-color);
 }
 
 .home {
-    background: linear-gradient(0.45turn, #444af2, #fff);
+    background: linear-gradient(0.45turn, #8bc3ff, #fff);
     /* background: linear-gradient(0.45turn, #6ff1ff, #e56cfd, #fff); */
     background-position: center;
     background-size: cover;
@@ -227,7 +229,7 @@ section {
     margin: 10rem 0;
     padding: 5rem 0;
     height: 120vh;
-    background: url(../img/random_blue_gradient_dots.png);
+    background: url(../img/random_light_navy_blue_gradient_dots.png);
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
@@ -236,7 +238,7 @@ section {
 .section-title {
     padding: 2rem 0;
     font-size: 5rem;
-    color: #444af2;
+    color: var(--navy-blue);
     text-align: center;
 }
 
@@ -328,7 +330,7 @@ section {
 
 .card-list .card-link:hover .card-button {
     color: var(--white);
-    background: #5372f0;
+    background: var(--navy-blue);
 }
 
 .card-wrapper .swiper-pagination-bullet {
@@ -353,7 +355,7 @@ section {
     margin: 3rem 0;
     padding: 5rem 7rem;
     height: 100vh;
-    background: url(../img/blue_dots_background_horizontal.png);
+    background: url(../img/light_navy_blue_dots_background_horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -371,7 +373,7 @@ section {
     font-size: 3.75em;
     margin: 2rem 0 5rem 0;
     font-weight: 600;
-    color: #444af2;
+    color: var(--navy-blue);
 }
 
 .column {
@@ -519,7 +521,7 @@ section {
 
 .about-us .card-item .card-link .badge {
     font-size: 1.6rem;
-    background: #444af2;
+    background: #8bc3ff;
 }
 
 .about-us .card-item .card-link .card-title {
@@ -563,7 +565,7 @@ section {
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px solid #444af2;
+    border: 2px solid #8bc3ff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
     transition: .4s ease;
     height: 100%;
@@ -611,7 +613,7 @@ section {
 /* contact us */
 .contact {
     /* background: linear-gradient(0.5turn, #f5f5f5, #e056fd); */
-    background: linear-gradient(0.5turn, #f5f5f5, #444af2);
+    background: linear-gradient(0.5turn, #f5f5f5, #8bc3ff);
 }
 
 .contact-container {
@@ -640,7 +642,7 @@ section {
     width: 120px;
     height: 5px;
     /* background-color: #a363aa; */
-    background-color: #6ff1ff;
+    background-color: var(--main-color);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -665,6 +667,7 @@ section {
 .contact-left .btn {
     background: transparent;
     color: white;
+    border: .3rem solid var(--white);
 }
 
 .contact-left .btn:hover {
@@ -681,7 +684,8 @@ section {
 
 .contact .flex {
     width: 100%;
-    background: var(--black);
+    background: var(--main-color);
+    border-radius: 30px;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -713,7 +717,7 @@ section {
 }
 
 .contact .flex .contact-text p:hover {
-    color: var(--main-color);
+    color: #8bc3ff;
     transform: scale(1.1);
 }
 
@@ -838,7 +842,7 @@ h3:after {
     height: 2px;
     margin: 20px auto;
     border: 0;
-    background: #6ff1ff;
+    background: var(--main-color);
     transition: all 0.2s
 }
 
@@ -1461,7 +1465,7 @@ h3:after {
 
     .home {
         /* background: linear-gradient(0.5turn, #6ff1ff, #e56cfd, #f5f5f5); */
-        background: linear-gradient(0.5turn, #444af2, #f5f5f5);
+        background: linear-gradient(0.5turn, #8bc3ff, #f5f5f5);
         height: 100vh;
     }
 
@@ -1477,7 +1481,7 @@ h3:after {
     .courses-section {
         padding: 0;
         height: 80vh;
-        background: url(../img/random_blue_gradient_dots.png);
+        background: url(../img/random_light_navy_blue_gradient_dots.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1491,7 +1495,7 @@ h3:after {
     .features-section {
         margin-top: 0;
         padding: 0 7rem;
-        background: url(../img/blue_dots_background_vertical3.png);
+        background: url(../img/light_navy_blue_dots_background_vertical3.png);
         background-size: contain;
         height: 200vh;
     }
