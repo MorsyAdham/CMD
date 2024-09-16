@@ -112,6 +112,7 @@ section {
 
 .header .flex {
     padding: 2rem;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -614,6 +615,7 @@ section {
 .contact {
     /* background: linear-gradient(0.5turn, #f5f5f5, #e056fd); */
     background: linear-gradient(0.5turn, #f5f5f5, #8bc3ff);
+    margin-bottom: 0;
 }
 
 .contact-container {
@@ -731,7 +733,7 @@ section {
 @import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
 
 .blog {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
 }
 
@@ -1511,7 +1513,6 @@ h3:after {
     }
 
     .about-us {
-        margin-top: 0;
         padding: 0 0 10rem 0;
     }
 
@@ -1538,7 +1539,11 @@ h3:after {
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
+    section {
+        margin: 5rem auto;
+    }
+
     .courses-section {
         height: 100vh;
     }
