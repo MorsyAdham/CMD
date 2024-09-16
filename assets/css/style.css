@@ -1496,10 +1496,10 @@ h3:after {
 
     .features-section {
         margin-top: 0;
-        padding: 0 7rem;
+        padding: 2rem 7rem;
         background: url(../img/light_navy_blue_dots_background_vertical3.png);
         background-size: contain;
-        height: 200vh;
+        height: 220vh;
     }
 
     .card {
@@ -1539,7 +1539,7 @@ h3:after {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     section {
         margin: 5rem auto;
     }
@@ -1550,8 +1550,8 @@ h3:after {
     }
 
     .features-section {
-        padding: auto 7rem;
-        height: 240vh;
+        padding: 5rem 7rem;
+        height: 300vh;
     }
 
     .contact .flex {
