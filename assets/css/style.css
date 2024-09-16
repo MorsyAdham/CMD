@@ -1544,6 +1544,10 @@ h3:after {
         margin: 5rem auto;
     }
 
+    .home {
+        margin-top: 0;
+    }
+
     .courses-section {
         height: 100vh;
         margin-bottom: 0;
