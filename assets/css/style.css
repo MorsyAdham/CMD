@@ -1546,11 +1546,12 @@ h3:after {
 
     .courses-section {
         height: 100vh;
+        margin-bottom: 0;
     }
 
     .features-section {
-        padding: 0 7rem;
-        height: 220vh;
+        padding: auto 7rem;
+        height: 240vh;
     }
 
     .contact .flex {
