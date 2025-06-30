@@ -55,6 +55,8 @@ new Swiper('.card-wrapper', {
 const courseDetails = {
     "Arduino": {
         title: "Arduino",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Basics of Arduino IDE and programming environment.",
             "Digital and analog I/O control: LEDs, buttons, and sensors.",
@@ -69,6 +71,8 @@ const courseDetails = {
     },
     "Mobile Application Development": {
         title: "Mobile Application Development",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Fundamentals of mobile app development using Flutter.",
             "UI/UX design principles: widgets, layouts, and navigation.",
@@ -83,6 +87,8 @@ const courseDetails = {
     },
     "Python": {
         title: "Python",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Master Python Fundamentals: Learn basic syntax, variables, data types, and control flow.",
             "Data Structures & Algorithms: Work with lists, dictionaries, sets, and advanced structures.",
@@ -98,6 +104,8 @@ const courseDetails = {
     },
     "C++": {
         title: "C++",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Fundamentals of C++: Syntax, loops, functions, arrays, and pointers.",
             "Memory Management: Dynamic memory, pointers, references.",
@@ -112,6 +120,8 @@ const courseDetails = {
     },
     "Hardware for ML & Computer Vision": {
         title: "Hardware for ML & Computer Vision",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "AI on Embedded Devices: Run models on microcontrollers and edge devices.",
             "Sensor Integration: Cameras, LIDAR for real-time vision tasks.",
@@ -126,6 +136,8 @@ const courseDetails = {
 
     "Hardware Design & Testing": {
         title: "Hardware Design & Testing",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Digital Logic Design: Combinational and sequential circuits.",
             "PCB Design: Learn to design PCBs using tools like KiCad or Eagle.",
@@ -141,6 +153,8 @@ const courseDetails = {
 
     "Generative AI & Prompt Engineering": {
         title: "Generative AI & Prompt Engineering",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Generative AI Models: GANs, VAEs, transformers.",
             "Prompt Engineering: Craft effective prompts for GPT, DALL·E, and others.",
@@ -155,6 +169,8 @@ const courseDetails = {
 
     "Embedded Systems": {
         title: "Embedded Systems",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Microcontroller Programming with C/C++.",
             "Sensor Integration: Motion, temperature, GPS, and communication modules.",
@@ -169,6 +185,8 @@ const courseDetails = {
 
     "CCNA": {
         title: "CCNA",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Networking Fundamentals: IP addressing, subnetting, routing, and switching.",
             "Cisco Devices: Configuration of routers and switches.",
@@ -183,6 +201,8 @@ const courseDetails = {
 
     "Blockchain": {
         title: "Blockchain",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Core Concepts: Decentralization, consensus, cryptographic hashing.",
             "Smart Contracts: Develop with Solidity on Ethereum.",
@@ -197,6 +217,8 @@ const courseDetails = {
 
     "Ethical Hacking": {
         title: "Ethical Hacking",
+        hours: "18 hours",
+        sessions: "6 sessions",
         description: [
             "Hacking Methodologies: Ethical hacking and penetration testing lifecycle.",
             "Vulnerability Scanning: Tools like Nmap, Nessus.",
@@ -220,6 +242,7 @@ document.querySelectorAll(".card-item").forEach(card => {
         if (courseDetails[courseKey]) {
             const data = courseDetails[courseKey];
             document.getElementById("popup-title").innerText = data.title;
+            document.getElementById("popup-meta").innerText = `${data.hours} | ${data.sessions}`;
 
             const list = document.getElementById("popup-description");
             list.innerHTML = "";
@@ -234,6 +257,7 @@ document.querySelectorAll(".card-item").forEach(card => {
         }
     });
 });
+
 
 function closePopup() {
     document.getElementById("course-popup").style.display = "none";
