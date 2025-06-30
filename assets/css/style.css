@@ -481,6 +481,13 @@ section {
     color: #189599;
 }
 
+.popup-meta {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
 .close-btn {
     position: absolute;
     top: 12px;
