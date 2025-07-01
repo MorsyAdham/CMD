@@ -53,10 +53,10 @@ new Swiper('.card-wrapper', {
 });
 
 const courseDetails = {
-    "Arduino": {
-        title: "Arduino",
-        hours: "18 hours",
-        sessions: "6 sessions",
+    "Robotics": {
+        title: "Robotics",
+        hours: "60 hours",
+        sessions: "12 sessions",
         description: [
             "Basics of Arduino IDE and programming environment.",
             "Digital and analog I/O control: LEDs, buttons, and sensors.",
@@ -67,12 +67,14 @@ const courseDetails = {
             "Hands-on with shields and modules (WiFi, Bluetooth, LCDs).",
             "Debugging & troubleshooting embedded systems."
         ],
-        price: "Price: 1000 EGP"
+        originalPrice: "6000 EGP",
+        price: "Price: 4000 EGP"
     },
+
     "Mobile Application Development": {
         title: "Mobile Application Development",
-        hours: "18 hours",
-        sessions: "6 sessions",
+        hours: "100 hours",
+        sessions: "20 sessions",
         description: [
             "Fundamentals of mobile app development using Flutter.",
             "UI/UX design principles: widgets, layouts, and navigation.",
@@ -83,12 +85,14 @@ const courseDetails = {
             "Local storage using Shared Preferences and SQLite.",
             "Project-Based Learning: Build chat apps, to-do lists, or smart controllers."
         ],
-        price: "Price: 1500 EGP"
+        originalPrice: "9000 EGP",
+        price: "Price: 4500 EGP"
     },
+
     "Python": {
         title: "Python",
-        hours: "18 hours",
-        sessions: "6 sessions",
+        hours: "50 hours",
+        sessions: "10 sessions",
         description: [
             "Master Python Fundamentals: Learn basic syntax, variables, data types, and control flow.",
             "Data Structures & Algorithms: Work with lists, dictionaries, sets, and advanced structures.",
@@ -99,13 +103,14 @@ const courseDetails = {
             "Project-based Learning: Build a chatbot, task manager, or data dashboard.",
             "Tools: Git, Jupyter Notebooks, pytest."
         ],
-
-        price: "Price: 900 EGP"
+        originalPrice: "4000 EGP",
+        price: "Price: 2000 EGP"
     },
+
     "C++": {
         title: "C++",
-        hours: "18 hours",
-        sessions: "6 sessions",
+        hours: "50 hours",
+        sessions: "10 sessions",
         description: [
             "Fundamentals of C++: Syntax, loops, functions, arrays, and pointers.",
             "Memory Management: Dynamic memory, pointers, references.",
@@ -115,122 +120,47 @@ const courseDetails = {
             "Projects: File management system, text editor.",
             "Real-World Tools: Visual Studio, Git."
         ],
-
-        price: "Price: 900 EGP"
-    },
-    "Hardware for ML & Computer Vision": {
-        title: "Hardware for ML & Computer Vision",
-        hours: "18 hours",
-        sessions: "6 sessions",
-        description: [
-            "AI on Embedded Devices: Run models on microcontrollers and edge devices.",
-            "Sensor Integration: Cameras, LIDAR for real-time vision tasks.",
-            "ML on Edge Devices: Implement object detection, facial recognition, and classification.",
-            "Real-Time Processing for Robotics and IoT systems.",
-            "Projects: Autonomous vehicles, smart surveillance, robotic arms.",
-            "Tools: OpenCV, TensorFlow Lite, Raspberry Pi, NVIDIA Jetson Nano."
-        ],
-
-        price: "Price: 900 EGP"
-    },
-
-    "Hardware Design & Testing": {
-        title: "Hardware Design & Testing",
-        hours: "18 hours",
-        sessions: "6 sessions",
-        description: [
-            "Digital Logic Design: Combinational and sequential circuits.",
-            "PCB Design: Learn to design PCBs using tools like KiCad or Eagle.",
-            "Circuit Simulation & Testing: Use multimeters, oscilloscopes, and logic analyzers.",
-            "Microcontroller-based Hardware Design.",
-            "Power Management & Noise Reduction Techniques.",
-            "Hands-On Projects: Build and test hardware circuits for automation, sensors, and IoT.",
-            "Industry Standards: Understand safety, documentation, and testing protocols."
-        ],
-
-        price: "Price: 900 EGP"
-    },
-
-    "Generative AI & Prompt Engineering": {
-        title: "Generative AI & Prompt Engineering",
-        hours: "18 hours",
-        sessions: "6 sessions",
-        description: [
-            "Generative AI Models: GANs, VAEs, transformers.",
-            "Prompt Engineering: Craft effective prompts for GPT, DALL·E, and others.",
-            "Training LLMs: Understand architectures like GPT, BERT, and fine-tuning methods.",
-            "Build Projects: AI content generators, chatbots, image generation tools.",
-            "Hands-On Practice: Work with OpenAI, Hugging Face APIs.",
-            "Tools: GPT, DALL·E, Stable Diffusion, LangChain."
-        ],
-
-        price: "Price: 900 EGP"
+        originalPrice: "4000 EGP",
+        price: "Price: 2000 EGP"
     },
 
     "Embedded Systems": {
         title: "Embedded Systems",
-        hours: "18 hours",
-        sessions: "6 sessions",
+        hours: "100 hours",
+        sessions: "20 sessions",
         description: [
-            "Microcontroller Programming with C/C++.",
-            "Sensor Integration: Motion, temperature, GPS, and communication modules.",
-            "RTOS Concepts: Task scheduling, interrupts, and timers.",
-            "Embedded Projects: IoT automation, wearable devices, robotics.",
-            "Debugging: Using tools like JTAG, logic analyzers, and serial monitors.",
-            "Tools: Arduino IDE, MPLAB X, STM32CubeIDE, Keil uVision."
+            "Intro to Embedded Systems & C Programming Basics.",
+            "AVR Microcontroller Programming (Digital I/O, Timers, Interrupts).",
+            "Hardware Control (LCD, ADC, PWM, Motors).",
+            "Communication Protocols (UART, SPI, I2C).",
+            "Sensor Integration & Wireless Modules.",
+            "Data Visualization + Debugging.",
+            "RTOS Intro with FreeRTOS + Task Management."
         ],
 
-        price: "Price: 900 EGP"
+        price: "Price: 4000 EGP",
+        originalPrice: "8500 EGP"
     },
 
-    "CCNA": {
-        title: "CCNA",
-        hours: "18 hours",
-        sessions: "6 sessions",
+    "Game Development": {
+        title: "Game Development",
+        hours: "100 hours",
+        sessions: "20 sessions",
         description: [
-            "Networking Fundamentals: IP addressing, subnetting, routing, and switching.",
-            "Cisco Devices: Configuration of routers and switches.",
-            "Protocols: TCP/IP, DNS, DHCP, VPN.",
-            "Network Security: Firewalls, ACLs, VPN setup.",
-            "Practical Labs: Design and troubleshoot networks.",
-            "Tools: Cisco Packet Tracer, GNS3, real Cisco hardware."
+            "Introduction to Unity interface and C# scripting.",
+            "2D and 3D game mechanics implementation.",
+            "3D modeling, texturing, rigging, and animation.",
+            "Scene composition, lighting, and camera.",
+            "Game physics, collisions, UI/UX design.",
+            "Sound integration and visual effects.",
+            "Game polishing and publishing.",
+            "Mini capstone project to build a publishable game."
         ],
 
-        price: "Price: 900 EGP"
+        price: "Price: 5000 EGP",
+        originalPrice: "10000 EGP"
     },
 
-    "Blockchain": {
-        title: "Blockchain",
-        hours: "18 hours",
-        sessions: "6 sessions",
-        description: [
-            "Core Concepts: Decentralization, consensus, cryptographic hashing.",
-            "Smart Contracts: Develop with Solidity on Ethereum.",
-            "dApp Development: Create decentralized applications.",
-            "Security & Privacy: Handle scalability, 51% attacks, and cryptographic challenges.",
-            "Projects: NFT marketplaces, DeFi apps, voting systems.",
-            "Tools: Truffle, Ganache, Remix, MetaMask."
-        ],
-
-        price: "Price: 900 EGP"
-    },
-
-    "Ethical Hacking": {
-        title: "Ethical Hacking",
-        hours: "18 hours",
-        sessions: "6 sessions",
-        description: [
-            "Hacking Methodologies: Ethical hacking and penetration testing lifecycle.",
-            "Vulnerability Scanning: Tools like Nmap, Nessus.",
-            "Web Security: OWASP Top 10 vulnerabilities, SQL injection, XSS.",
-            "Post-Exploitation: Maintaining access, backdoors, pivoting.",
-            "Hands-On Tools: Kali Linux, Metasploit, Burp Suite.",
-            "Projects: Simulate attacks on systems and write penetration reports.",
-            "Ethics & Legal Compliance: Understand frameworks and standards."
-        ],
-
-        price: "Price: 900 EGP"
-    },
     // Add more courses here...
 };
 
@@ -252,11 +182,16 @@ document.querySelectorAll(".card-item").forEach(card => {
                 list.appendChild(li);
             });
 
+            document.getElementById("popup-original-price").innerText =
+                data.originalPrice ? `Original: ${data.originalPrice}` : "";
+
             document.getElementById("popup-price").innerText = data.price;
+
             document.getElementById("course-popup").style.display = "flex";
         }
     });
 });
+
 
 
 function closePopup() {
