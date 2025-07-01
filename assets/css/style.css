@@ -382,14 +382,14 @@ section {
     background: #3773a5;
 }
 
-.card-list .card-link .badge.Hardware_for_ml_cv {
+.card-list .card-link .badge.Embedded {
     color: #fefefe;
     background: #ff6b35;
 }
 
-.card-list .card-link .badge.Hardware_design_testing {
+.card-list .card-link .badge.Game {
     color: #fefefe;
-    background: #1f1e2a;
+    background: #a263c6;
 }
 
 .card-list .card-link .card-title {
@@ -484,10 +484,17 @@ section {
 }
 
 .popup-meta {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
     margin-top: -10px;
     margin-bottom: 15px;
+}
+
+.popup-original-price {
+    font-size: 1.2rem;
+    color: #888;
+    text-decoration: line-through;
+    margin-top: 1rem;
 }
 
 .close-btn {
