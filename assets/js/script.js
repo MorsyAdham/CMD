@@ -1,8 +1,9 @@
+// Sticky header and menu
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
-})
+});
 
 let navbar = document.querySelector('.header .flex .navbar');
 let menuBtn = document.querySelector('#menu-btn');
@@ -10,25 +11,24 @@ let menuBtn = document.querySelector('#menu-btn');
 menuBtn.onclick = () => {
     navbar.classList.toggle('active');
     menuBtn.classList.toggle('fa-times');
-}
+};
 
 window.onscroll = () => {
     navbar.classList.remove('active');
     menuBtn.classList.remove('fa-times');
-}
+};
 
-new Swiper('.card-wrapper', {
+// Swiper setup with saved instance
+const swiper = new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
 
-    // pagination bullets
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -38,23 +38,16 @@ new Swiper('.card-wrapper', {
         delay: 3000,
     },
 
-    // Responsive breakpoints
     breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        }
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
     }
 });
 
 const courseDetails = {
-    "Robotics": {
-        title: "Robotics",
+    "Robotics - Arduino": {
+        title: "Robotics - Arduino",
         hours: "60 hours",
         sessions: "12 sessions",
         description: [
@@ -67,8 +60,8 @@ const courseDetails = {
             "Hands-on with shields and modules (WiFi, Bluetooth, LCDs).",
             "Debugging & troubleshooting embedded systems."
         ],
-        originalPrice: "6000 EGP",
-        price: "Price: 4000 EGP"
+        originalPrice: "6,000 EGP",
+        price: "Price: 3,600 EGP"
     },
 
     "Mobile Application Development": {
@@ -85,14 +78,14 @@ const courseDetails = {
             "Local storage using Shared Preferences and SQLite.",
             "Project-Based Learning: Build chat apps, to-do lists, or smart controllers."
         ],
-        originalPrice: "9000 EGP",
-        price: "Price: 4500 EGP"
+        originalPrice: "7,000 EGP",
+        price: "Price: 3,500 EGP"
     },
 
     "Python": {
         title: "Python",
-        hours: "50 hours",
-        sessions: "10 sessions",
+        hours: "60 hours",
+        sessions: "20 sessions",
         description: [
             "Master Python Fundamentals: Learn basic syntax, variables, data types, and control flow.",
             "Data Structures & Algorithms: Work with lists, dictionaries, sets, and advanced structures.",
@@ -103,14 +96,14 @@ const courseDetails = {
             "Project-based Learning: Build a chatbot, task manager, or data dashboard.",
             "Tools: Git, Jupyter Notebooks, pytest."
         ],
-        originalPrice: "4000 EGP",
-        price: "Price: 2000 EGP"
+        originalPrice: "5,000 EGP",
+        price: "Price: 2,500 EGP"
     },
 
     "C++": {
         title: "C++",
-        hours: "50 hours",
-        sessions: "10 sessions",
+        hours: "60 hours",
+        sessions: "20 sessions",
         description: [
             "Fundamentals of C++: Syntax, loops, functions, arrays, and pointers.",
             "Memory Management: Dynamic memory, pointers, references.",
@@ -120,8 +113,8 @@ const courseDetails = {
             "Projects: File management system, text editor.",
             "Real-World Tools: Visual Studio, Git."
         ],
-        originalPrice: "4000 EGP",
-        price: "Price: 2000 EGP"
+        originalPrice: "5,000 EGP",
+        price: "Price: 2,500 EGP"
     },
 
     "Embedded Systems": {
@@ -138,8 +131,8 @@ const courseDetails = {
             "RTOS Intro with FreeRTOS + Task Management."
         ],
 
-        price: "Price: 4000 EGP",
-        originalPrice: "8500 EGP"
+        price: "Price: 4,000 EGP",
+        originalPrice: "8,500 EGP"
     },
 
     "Game Development": {
@@ -157,18 +150,36 @@ const courseDetails = {
             "Mini capstone project to build a publishable game."
         ],
 
-        price: "Price: 5000 EGP",
-        originalPrice: "10000 EGP"
+        price: "Price: 5,000 EGP",
+        originalPrice: "10,000 EGP"
     },
 
+    "AI & ML": {
+        title: "AI & ML",
+        hours: "100 hours",
+        sessions: "25 sessions",
+        description: [
+            "Python programming essentials: variables, data types, conditionals, loops, and basic projects.",
+            "Object-Oriented Programming: classes, inheritance, encapsulation, and real-world modeling.",
+            "Data structures and exception handling: lists, dictionaries, sets, try/except blocks.",
+            "Data analysis with Python: NumPy, Pandas, Matplotlib, and data visualization.",
+            "Introduction to AI & ML: concepts, types of learning, and ML pipelines.",
+            "Supervised learning: regression, classification, model training, and evaluation.",
+            "Unsupervised learning: clustering, dimensionality reduction, and use cases.",
+            "Final project: build a complete AI/ML solution using real-world datasets."
+        ],
+        originalPrice: "8,000 EGP",
+        price: "Price: 4,000 EGP"
+    },
     // Add more courses here...
 };
 
-// Add click event to all course cards
+// Show popup
 document.querySelectorAll(".card-item").forEach(card => {
     card.addEventListener("click", () => {
         const badge = card.querySelector(".badge");
         const courseKey = badge?.innerText.trim();
+
         if (courseDetails[courseKey]) {
             const data = courseDetails[courseKey];
             document.getElementById("popup-title").innerText = data.title;
@@ -187,13 +198,15 @@ document.querySelectorAll(".card-item").forEach(card => {
 
             document.getElementById("popup-price").innerText = data.price;
 
+            // Show popup and stop Swiper autoplay
             document.getElementById("course-popup").style.display = "flex";
+            swiper.autoplay.stop();
         }
     });
 });
 
-
-
+// Close popup and resume autoplay
 function closePopup() {
     document.getElementById("course-popup").style.display = "none";
+    swiper.autoplay.start();
 }
