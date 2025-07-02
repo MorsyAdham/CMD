@@ -392,6 +392,11 @@ section {
     background: #a263c6;
 }
 
+.card-list .card-link .badge.AI {
+    color: #fefefe;
+    background: #63afc6;
+}
+
 .card-list .card-link .card-title {
     font-size: 1.19rem;
     color: #000;
