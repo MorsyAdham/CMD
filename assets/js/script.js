@@ -171,6 +171,42 @@ const courseDetails = {
         originalPrice: "8,000 EGP",
         price: "Price: 4,000 EGP"
     },
+
+    "Robotics for Kids": {
+        title: "Robotics for Kids",
+        hours: "45 hours",
+        sessions: "15 sessions",
+        description: [
+            "Introduction to robotics and how robots work in the real world.",
+            "Learn the basics of Arduino programming in a fun and simple way.",
+            "Understand electricity and build simple circuits using LEDs and batteries.",
+            "Use PictoBlox to create interactive robotics and coding projects.",
+            "Explore common electronic components like sensors, motors, and buzzers.",
+            "Discover how wireless modules like WiFi and Bluetooth allow robots to connect and communicate.",
+            "Final project: Build and program your own Smart Car robot!"
+        ],
+        originalPrice: "6,000 EGP",
+        price: "Price: 3,000 EGP"
+    },
+
+    "Programming for Kids": {
+        title: "Programming for Kids",
+        hours: "40 hours",
+        sessions: "10 sessions",
+        description: [
+            "Learn the basics of Python: variables, numbers, text, and how to talk to the computer.",
+            "Create fun programs with decisions (if/else) and loops to repeat actions.",
+            "Make mini-games and interactive stories using simple code.",
+            "Use lists to store things like scores or colors, and build logic using conditions.",
+            "Understand how to catch and fix errors using friendly error messages.",
+            "Explore drawing and animations using Turtle graphics.",
+            "Build cool projects like a quiz game, a calculator, or a simple drawing app.",
+            "Final project: design your own mini game or animation and share it!"
+        ],
+        originalPrice: "3000 EGP",
+        price: "Price: 2000 EGP"
+    }
+
     // Add more courses here...
 };
 
