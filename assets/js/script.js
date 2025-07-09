@@ -61,7 +61,7 @@ const courseDetails = {
             "Debugging & troubleshooting embedded systems."
         ],
         originalPrice: "6,000 EGP",
-        price: "Price: 3,600 EGP"
+        price: "Price: 4,000 EGP"
     },
 
     "Mobile Application Development": {
@@ -186,13 +186,13 @@ const courseDetails = {
             "Final project: Build and program your own Smart Car robot!"
         ],
         originalPrice: "6,000 EGP",
-        price: "Price: 3,000 EGP"
+        price: "Price: 3,500 EGP"
     },
 
     "Programming for Kids": {
         title: "Programming for Kids",
         hours: "40 hours",
-        sessions: "10 sessions",
+        sessions: "20 sessions",
         description: [
             "Learn the basics of Python: variables, numbers, text, and how to talk to the computer.",
             "Create fun programs with decisions (if/else) and loops to repeat actions.",
@@ -203,8 +203,26 @@ const courseDetails = {
             "Build cool projects like a quiz game, a calculator, or a simple drawing app.",
             "Final project: design your own mini game or animation and share it!"
         ],
-        originalPrice: "3000 EGP",
-        price: "Price: 2000 EGP"
+        originalPrice: "3500 EGP",
+        price: "Price: 2500 EGP"
+    },
+
+    "Scratch for Kids": {
+        title: "Scratch for Kids",
+        hours: "30 hours",
+        sessions: "15 sessions",
+        description: [
+            "Introduce kids to the Scratch platform and interface.",
+            "Understand how coding is like storytelling.",
+            "Learn user interaction and game basics.",
+            "Teach logic through conditions and loops.",
+            "Create a simple, playable game.",
+            "Create interactive, animated stories.",
+            "Advance project design with creativity and polish.",
+            "Build a complete, polished Scratch game!"
+        ],
+        originalPrice: "3500 EGP",
+        price: "Price: 2500 EGP"
     }
 
     // Add more courses here...
