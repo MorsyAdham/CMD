@@ -397,6 +397,11 @@ section {
     background: #63afc6;
 }
 
+.card-list .card-link .badge.Scratch {
+    color: #fefefe;
+    background: #e86523;
+}
+
 .card-list .card-link .card-title {
     font-size: 1.19rem;
     color: #000;
